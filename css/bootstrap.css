@@ -9,8 +9,9 @@ html {
   -webkit-text-size-adjust: 100%;
       -ms-text-size-adjust: 100%;
 }
-body {
+.body {
   margin: 0;
+  background-color: #58f17e;
 }
 article,
 aside,
@@ -1586,6 +1587,8 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
+  background-color: skyblue;
+  text-decoration-color:orangered; 
 }
 @media (min-width: 768px) {
   .container {
