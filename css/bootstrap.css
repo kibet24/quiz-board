@@ -235,6 +235,9 @@ th {
     orphans: 3;
     widows: 3;
   }
+  .btn {
+    color: red;
+  }
   h2,
   h3 {
     page-break-after: avoid;
@@ -1588,7 +1591,7 @@ pre code {
   margin-right: auto;
   margin-left: auto;
   background-color: skyblue;
-  text-decoration-color:orangered; 
+  text-decoration-color: grey;
 }
 @media (min-width: 768px) {
   .container {
@@ -2633,6 +2636,7 @@ input[type="search"] {
 }
 .form-group {
   margin-bottom: 15px;
+  width: 25%;
 }
 .radio,
 .checkbox {

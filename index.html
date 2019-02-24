@@ -4,29 +4,71 @@
     <meta charset="utf-8">
     <title></title>
     <link rel="stylesheet" href="/css/styles.css" type="text/css">
-    <link href="css/bootstrap.css" rel="stylesheet" type="text/css"
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
   </head>
-  
+
   <body class="body">
-    <div class="container">
-      <h1 class="h1">Tenwek High School.</h1>
-      <p>We Trust in God.</p>
-      <hr>
-      <h2>Self Assesment Test.</h2>
-      <p>JavaScript Exam.</p>
-      <h2>Instructions.</h2>
-      <p>Carefully Read and Understand the Statements below before you start your Test.</p>
-      <hr>
-      <div class="rule">
+
+      <div class="container">
+        <h1>Tenwek High School.</h1>
+        <p>We Trust in God.</p>
+        <hr>
+        <h2>Self Assesment Test.</h2>
+        <p>JavaScript Exam.</p>
+        <h2>Instructions.</h2>
+        <p>Carefully Read and Understand the Statements below before you start your Test.</p>
+        <hr>
+
+          <ol>
+            <li>Input your Name and Admission number in the relevant text fields.</li>
+            <li>You have 30 minutes to complete the test.</li>
+            <li>No copying from another person.</li>
+            <li>No use of 'mwakenyas'.</li>
+          </ol>
+          <hr><hr>
+          <div class="form-group">
+      <label for="studentName">Full Name.</label>
+      <input type="text" id="studentName" class="form-control">
+    </div>
+    <div class="form-group">
+      <label for="registration">Admission Number</label>
+      <input type="text" id="registration" class="form-control">
+    </div>
+           <hr>
+    <div id="test">
+      <form class="radio">
         <ol>
-          <li>Input your Name and Admission number in the relevant text fields.</li>
-          <li>You have 30 minutes to complete the test.</li>
-          <li>No copying from another person.</li>
-          <li>No use of 'mwakenyas'.</li>
+          <li> <label>What is JavaScript?</label> </li>
+          <input type="radio" name="quiz1" value="05">It's a programming language that controls the behaviour of a webpage.<br>
+          <input type="radio" name="quiz1" value="00">It's a language for computers.
+          <br><br>
+
+          <li> <label>What is a JavaScript variable?</label> </li>
+          <input type="radio" name="quiz2" value="05">It's a programming language that controls the behaviour of a webpage.<br>
+          <input type="radio" name="quiz2" value="00">It's a language for computers.
+          <br><br>
+
+          <li> <label>What is an array?</label> </li>
+          <input type="radio" name="quiz3" value="05">It's a programming language that controls the behaviour of a webpage.<br>
+          <input type="radio" name="quiz3" value="00">It's a language for computers.
+          <br><br>
+
+          <li> <label>What is jquery?</label> </li>
+          <input type="radio" name="quiz4" value="05">It's a programming language that controls the behaviour of a webpage.<br>
+          <input type="radio" name="quiz4" value="00">It's a language for computers.
+          <br><br>
+
+          <li> <label>What is a callback function?</label> </li>
+          <input type="radio" name="quiz5" value="05">It's a programming language that controls the behaviour of a webpage.<br>
+          <input type="radio" name="quiz5" value="00">It's a language for computers.
+
+
         </ol>
-      </div>
+        <button type="submit" class="btn">Get Results.</button>
+      </form>
     </div>
     <script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
-    <script src="js/scripts.js"></script>
+    <script src="js/main.js"></script>
+
   </body>
 </html>
