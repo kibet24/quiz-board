@@ -1590,7 +1590,7 @@ pre code {
   padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
-  background-color: skyblue;
+  background-color:;
   text-decoration-color: grey;
 }
 @media (min-width: 768px) {
