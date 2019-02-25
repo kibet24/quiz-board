@@ -1,21 +1,29 @@
-# Project Name.
-This is a program that tests the students with an online test and render the Results on the same page.
+## Author.
+Amos Kibet
 
-# Author
-Amos Kibet.
+## Project Name
+Quiz Board
 
-# BDD
+## Project Description.
+It is a program that allows the user to do an online test and get the results online
 
+## set up instruction
+You only need a device with a browser.
 
-# Desscription  of Project
-This project uses basic HTML, CSS and JavaScript code as programing languages.
+## GitHub live pages url.
+https://kibet24.github.io/quiz-board
 
-# Contribution.
-Free to contribute.
+## BDD
+| Conditions                                              | Output                              |
+|---------------------------------------------------------|-------------------------------------|
+| The candidate has to input one answer.                  | right or wrong                      |
+| The candidate answers the question and get their marks. | The result is displayed in % form.  |
 
-# Set up Instructions.
-No set up instructions.
+## technologies used
+ HTML
+ CSS
+ Bootstrap
+ JQuery
 
-# Licence
-
-Copyright (c) 2019 Amos Kibet
+## copyright and license.
+Copyright (c) Amos Kibet.
