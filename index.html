@@ -1,63 +1,73 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
-  <head>
+<html>
+<head>
     <meta charset="utf-8">
-    <title></title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
-    <link href="css/styles.css" rel="stylesheet"  type="text/css">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+    <title>JavaScript Test</title>
   </head>
   <body>
 
       <div class="container">
+        <h1>Tenwek High School</h1>
+        <p>JavaScript Test.</p>
+        <hr>
+        <br>
+        <h2><em>Instructions</em></h2>
+        <p>Read the Instructions carefully before answering the questions.</p>
+        <br>
+        <ol>
+          <li>Answer all the questions</li>
+          <li>Keep your work private.</li>
+        </ol>
+        <form id="test">
+            <p>1.What is JavaScript?</p><br>
+            <div>
+              <label>
+                <input type="radio" id="1a"  name="Q1" value="0"/>It is used to make the pages pretty.<br>
+                <input type="radio" id="1b" name="Q1" value="20"/>It is a behaviour driven programming language<br>
+              </label>
+            </div>
+            <p>2.What is DOM?</p>
+            <div>
+              <label>
+                <input type="radio" id="2a" name="Q2" value="0"/>Data Object Models.<br>
+                <input type="radio" id="2b" name="Q2" value="20"/>Document Object Model.<br>
+              </label>
+            </div>
+            <p>3.Which of the following is not a JavaScript method?</p>
+            <div>
+              <label>
+                <input type="radio" id="3a" name="Q3" value="20"/> .click <br>
+                <input type="radio" id="3b" name="Q3" value="0"/> getElement.<br>
+              </label>
+            </div>
+            <p>4.What is an array?</p>
+            <div>
+              <label>
+                <input type="radio" id="4a" name="Q4" value="0"/>It is a JavaScript function.<br>
+                <input type="radio" id="4b" name="Q4" value="20"/>It is a variable that stores more than one value.<br>
+              </label>
+            </div>
+            <p>5.What is jQuery</p>
+            <div>
+              <label>
+                <input type="radio" id="5a" name="Q5" value="20"/>It is a JavaScript library.<br>
+                <input type="radio" id="5b" name="Q5" value="0"/>No Idea<br>
+              </label>
+            </div>
 
-        <div class="jumbotron">
 
-          <h1>Tenwek High School.</h1>
-          <p>We Trust in God.</p>
-          <hr>
-          <h2>Self Assesment Test.</h2>
-          <p>JavaScript Exam.</p>
-          <hr>
-          <h2>Instructions.</h2>
-          <p>Carefully Read and Understand the Statements below before you start your Test.</p>
-          <hr>
-          <ol>
-              <li>No copying from another person.</li>
-              <li>No use of 'mwakenyas'.</li>
-          </ol>
-          <hr><hr>
-          <form class="quiz" action="index.html" method="post" name="quiz">
-            <ol>
-              <li>What is  the role of JavaScript in programming</li><br>
-              <input type="radio" name="quiz1" value="noMark">It is a computer language used for calculations.<br>
-              <input type="radio" name="quiz1" value="mark">It makes a webpage interactive.<br>
-              <hr>
-              <li>What is  an arry?</li><br>
-              <input type="radio" name="quiz2" value="mark">A variable with holds a list of data.<br>
-              <input type="radio" name="quiz2" value="noMark">Is a JavaScript method used to locate variables.<br>
-              <hr>
-              <li>What is  the DOM?</li><br>
-              <input type="radio" name="quiz3" value="noMark">It<br>
-              <input type="radio" name="quiz3" value="mark">It makes a webpage interactive.<br>
-              <hr>
-              <li>What is  the role of JavaScript in programming/</li><br>
-              <input type="radio" name="quiz4" value="mark">It is a computer language used for calculations.<br>
-              <input type="radio" name="quiz4" value="noMark">It makes a webpage interactive.<br>
-              <hr>
-              <li>What is  the role of JavaScript in programming/</li><br>
-              <input type="radio" name="quiz5" value="noMark">It is a computer language used for calculations.<br>
-              <input type="radio" name="quiz5" value="mark">It makes a webpage interactive.<br>
-            </ol>
-          </form>
-          <input class="btn btn-success" type="button" name="results" value="SUBMIT" id="button" onClick="check(innerHTML);">
-        </div>
+            <button type="submit" class="btn btn-warning" id="yellow">SUBMIt</button><br>
 
-      </div>
-      <div id="scoreline">
-        <p id="scoreline">You scored</p>
-    </div>
-        <script   src="https://code.jquery.com/jquery-3.3.1.min.js"   integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="   crossorigin="anonymous"></script>
-    <script src="js/main.js"></script>
+        </form>
+
+          <div id="input">
+          </div>
+
 
 
   </body>
