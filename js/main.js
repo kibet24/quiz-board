@@ -15,13 +15,13 @@ $("document").ready(function(){
       var score = parseInt(question1+question2+question3+question4+question5);
 
       if (score >=80 ) {
-        $("#input").text("You Scored: " + score + " Excellent work.");
+        $("#input").text("You Scored: " + score + " COMMENT:  Excellent work.");
       }
       else if (score >=50 && score <= 79  ){
-        $("#input").text("You Scored: " + score + " Nice Try");
+        $("#input").text("You Scored: " + score + " COMMENT:   Nice Try");
       }
       else {
-        $("#input").text("You scored: " + score + " Below Average")
+        $("#input").text("You scored: " + score + " COMMENT:   Below Average")
       }
     });
    });
