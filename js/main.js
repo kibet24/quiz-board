@@ -1,31 +1,27 @@
-function check() {
-    var quiz1 = document.quiz.quiz1.val;
-    var quiz2 = document.quiz.quiz2.val;
-    var quiz3 = document.quiz.quiz3.val;
-    var quiz4 = document.quiz.quiz4.val;
-    var quiz5 = document.quiz.quiz5.val;
-    var score = 0;
-    if (quiz1 == "mark") {
-        score = score  + 20;
-    }
-    ;
-    if (quiz2 == "mark") {
-        score = score + 20;
-    }
-    ;
-    if (quiz3 == "mark") {
-        score = score + 20;
-    }
-    ;
-    if (quiz4 == "mark") {
-        score = score + 20;
-    }
-    ;
-    if (quiz5 == "mark") {
-        score = score + 20;
-    }
-    ;
-    document.getElementById("scoreline").style.visibility = "visible";
-    document.getElementById().innerHTML = "You Scored: " + score + "%";
-}
-;
+$("document").ready(function(){
+    $("h1").css("color", "red");
+
+  });
+
+  $(document).ready(function() {
+    $("#test").submit(function(event){
+      event.preventDefault();
+      var question1 = parseInt($("[name=Q1]:checked").val());
+      var question2 = parseInt($("[name=Q2]:checked").val());
+      var question3= parseInt($("[name=Q3]:checked").val());
+      var question4= parseInt($("[name=Q4]:checked").val());
+      var question5= parseInt($("[name=Q5]:checked").val());
+
+      var score = parseInt(question1+question2+question3+question4+question5);
+
+      if (score >=80 ) {
+        $("#input").text("You Scored: " + score + " Excellent work.");
+      }
+      else if (score >=50 && score <= 79  ){
+        $("#input").text("You Scored: " + score + " Nice Try");
+      }
+      else {
+        $("#input").text("You scored: " + score + " Below Average")
+      }
+    });
+   });
