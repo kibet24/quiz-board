@@ -1,4 +1,12 @@
   $(document).ready(function() {
+    ("#user").submit(function(event) {
+
+      var firstName = document.getElementById('first').value;
+      var lastName = document.getElementById('last').value;
+
+      var fullName = (firstName + lastName );
+      $('#input').text( fullName);
+    })
     $("#test").submit(function(event){
       event.preventDefault();
       var question1 = parseInt($("[name=Q1]:checked").val());
@@ -10,13 +18,14 @@
       var score = parseInt(question1+question2+question3+question4+question5);
 
       if (score >=80 ) {
-        $("#input").text("You Scored: " + score + " COMMENT:  Excellent work.");
+        $("#input").text("You Scored: " + score + "%" + " COMMENT:  Excellent work.");
       }
       else if (score >=50 && score <= 79  ){
-        $("#input").text("You Scored: " + score + " COMMENT:   Nice Try");
+        $("#input").text("You Scored: " + score + "%" + " COMMENT:   Nice Try");
       }
       else {
-        $("#input").text("You scored: " + score + " COMMENT:   Below Average")
+        $("#input").text(" You scored: " + score + "%" + " COMMENT:   Below Average")
       }
     });
+
    });
